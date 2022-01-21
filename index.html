@@ -22,6 +22,23 @@
         transition: transform 1s ease;
         transform: scale(1.05);
       }
+      .container-footer{
+        display: grid;
+        grid-template-columns: repeat(4,2fr);
+        padding: 30px 0px 20px 60px;
+      }
+      @media (min-width:1024px),(max-width:1400px) {
+        .container-footer{
+        display: grid;
+        grid-template-columns: repeat(4,2fr);
+      }
+    }
+      @media (max-width:768px) {
+        .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+      }
+      }
     </style>
 </head>
 <body>
@@ -83,23 +100,23 @@
               </div>
               <div class="carousel-item">
                 <div>
-                  <h2>MI LED TV 4A PRO 32</h2>
+                  <h2>Headphone For Cool Dude</h2>
                   <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
                   </p>
                   <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
                   <button class="d-block border-0 rounded-3 text-white" style="background-color:#FF136F;">BUY NOW<i class="fas fa-arrow-right ms-2"></i></button>
               </div>
-              <div><img src="images/banner-images/tv.png" alt="" width="350" height="300"></div>
+              <div><img src="images/banner-images/headphone.png" alt="" width="350" height="300"></div>
               </div>
               <div class="carousel-item">
                 <div>
-                  <h2>MI LED TV 4A PRO 32</h2>
+                  <h2>Try It For Better Gaming</h2>
                   <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
                   </p>
                   <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
                   <button class="d-block border-0 rounded-3 text-white" style="background-color:#FF136F;">BUY NOW<i class="fas fa-arrow-right ms-2"></i></button>
               </div>
-              <div><img src="images/banner-images/tv.png" alt="" width="350" height="300"></div>
+              <div><img src="images/banner-images/xbox.png" alt="" width="350" height="300"></div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -112,21 +129,21 @@
             </button>
           </div>
         </section>
-        <section class="container mt-5">
+        <section class="container float-center mt-5">
           <h4>Categories</h4>
           <div>
-            <div class="row gy-5 d-flex justify-content-center">
+            <div class="row gy-5">
               <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center mt-3 p-2 rounded-3 w-25" style="background: linear-gradient(#FF9C35, #FFD019);">
                 <h4>Watch</h4>
-                <img style="justify-content:end;" src="images/categories/watch.png" alt="" width="68.21" height="70">
+                <img src="images/categories/watch.png" alt="" width="68.21" height="70">
               </div>
-              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center mt-3 ms-3 p-2 rounded-3 w-25" style="background: linear-gradient(#FF589B, #FF136F);">
+              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center  mt-3 ms-3 p-2 rounded-3 w-25" style="background: linear-gradient(#FF589B, #FF136F);">
                 <div><h4>Bag</h4></div>
-                <div><img style="justify-content:end;" src="images/categories/bag.png" alt="" width="68.21" height="70"></div>
+                <div><img src="images/categories/bag.png" alt="" width="68.21" height="70"></div>
               </div>
               <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center mt-3 ms-3 p-2 rounded-3 w-25" style="background: linear-gradient(#4289FF, #3F07F8);">
                 <div><h4>Shoes</h4></div>
-                <div><img style="justify-content:end;" src="images/categories/shoes.png" alt="" width="68.21" height="70"></div>
+                <div><img src="images/categories/shoes.png" alt="" width="68.21" height="70"></div>
               </div>
             </div>
           </div>
@@ -213,7 +230,7 @@
             </div>
           </div>
         </section>
-        <section class="container mt-5 p-5 rounded" style="background-color: #FEEAE9;">
+        <section class="container mt-5 mb-5 p-5 rounded" style="background-color: #FEEAE9;">
             <h4 class="text-center">LET'S STAY IN TOUCH</h4>
           <p class="text-center">Get updates on sales specials and more</p>
           <div class="text-center">
@@ -222,12 +239,36 @@
           </div>
         </section>
     </main>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <footer class="container" style="background-color: #363958;">
+      <div class="container-footer">
+        <div>
+          <img width="291" height="40" src="images/categories/Group 33072.png" alt="">
+          <p class="text-success">Aliquam esse molestias itaque <br>
+            quaerat pariatur neque, iure <br>
+            necessitatibus ex?</p>
+        </div>
+        <div>
+          <h3 class="text-primary">Feautures</h3>
+        <p class="text-white">Deals & Offer</p>
+        <p class="text-white">Customer Reviews</p>
+        <p class="text-white">Cancelation Policy</p>
+      </div>
+        <div>
+          <h3 class="text-primary">Quick Contact</h3>
+        <p class="text-white">tuhinkabeer@gamil.com</p>
+        <p class="text-white">01792531327</p>
+        <p class="text-white">Belabo, Narsingdi</p>
+        <p class="text-white">Dhaka,Bangladesh</p>
+      </div>
+        <div>
+          <h3 class="text-primary">Follow Us On</h3>
+        <p class="text-white"><i class="fab fa-instagram"></i>Instagram</p>
+        <p class="text-white"><i class="fab fa-youtube"></i>YouTube</p>
+        <p class="text-white"><i class="fab fa-twitter"></i>Twitter</p>
+      </div>
+      </div>
+      <p class="text-danger text-center">&copy;Tuhin|All Rights Reserved</p>
+    </footer>
     <script src="bootstrap-js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
