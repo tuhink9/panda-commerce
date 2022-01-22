@@ -27,6 +27,9 @@
         grid-template-columns: repeat(4,2fr);
         padding: 30px 0px 20px 60px;
       }
+      .icon{
+        right: 15px;
+      }
       @media (min-width:1024px),(max-width:1400px) {
         .container-footer{
         display: grid;
@@ -43,25 +46,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container d-flex align-items-center">
-              
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" width="159" height="25" class="d-inline-block align-text-top"></a>
-              
-              <form class="d-flex align-items-center">
-                <div class="container">
-                  <form>
-                      <div class="row">
-                          <div class="input-group mb-3 col-sm-6">
-                            <input type="text" class="form-control border-right-0" placeholder="Enter Your Email" aria-label="Username" aria-describedby="basic-addon1">
-                              
-                                  <span class="input-group-text border-left-0 rounded-right bg-white" id="basic-addon1"><i class="fas fa-search"></i></span>
-                              
-                          </div>
-                      </div>
-                  </form>
+                <div>
+                  <form class="d-flex position-relative me-2">
+                    <input type="search" class="form-control rounded-pill" placeholder="search" aria-label="search">
+                              <span class="position-absolute my-2 icon"><i class="fas fa-search">
+                              </i><span>
+                              </form>
               </div>
-              </form>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -71,53 +65,63 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Contact Us</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-    </header>
-    <main>
+          
         <section class="container mt-4 p-5 rounded-1" style="background-color:#FEEAE9;">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div>
-                  <h2>MI LED TV 4A PRO 32</h2>
-                  <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
-                  </p>
-                  <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2>MI LED TV 4A PRO 32</h2>
+                      <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
+                      </p>
+                    <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
                   <button class="d-block border-0 rounded-3 text-white" style="background-color:#FF136F;">BUY NOW<i class="fas fa-arrow-right ms-2"></i></button>
-              </div>
-              <div><img src="images/banner-images/tv.png" alt="" width="350" height="300"></div>
+                </div>
+                  <div class="col-lg-6">
+                    <img src="images/banner-images/tv.png" alt="" width="350" height="300">
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <div>
-                  <h2>Headphone For Cool Dude</h2>
-                  <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
-                  </p>
-                  <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
-                  <button class="d-block border-0 rounded-3 text-white" style="background-color:#FF136F;">BUY NOW<i class="fas fa-arrow-right ms-2"></i></button>
-              </div>
-              <div><img src="images/banner-images/headphone.png" alt="" width="350" height="300"></div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2>Headphone For Cool Dude</h2>
+                      <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
+                      </p>
+                        <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
+                          <button class="d-block border-0 rounded-3 text-white" style="background-color:#FF136F;">BUY NOW<i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                      <div class="col-lg-6">
+                    <img src="images/banner-images/headphone.png" alt="" width="350" height="300">
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <div>
-                  <h2>Try It For Better Gaming</h2>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2>Try It For Better Gaming</h2>
                   <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem explicabo debitis sequi a ab ullam esse, obcaecati, fugiat autem quia ad error voluptas? Maxime modi ex ab qui laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, officiis! Provident magni architecto, esse animi in quo qui rem ducimus cupiditate reprehenderit dolores impedit repellendus quaerat ipsam magnam nisi laboriosam.
                   </p>
                   <span class="fw-bolder fs-4" style="color:#FF136F;">$1299</span>
                   <button class="d-block border-0 rounded-3 text-white" style="background-color:#FF136F;">BUY NOW<i class="fas fa-arrow-right ms-2"></i></button>
-              </div>
-              <div><img src="images/banner-images/xbox.png" alt="" width="350" height="300"></div>
-              </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="images/banner-images/xbox.png" alt="" width="350" height="300">
+                  </div>
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -129,33 +133,57 @@
             </button>
           </div>
         </section>
-        <section class="container float-center mt-5">
+    </header>
+    <main>
+        <section class="container my-5">
           <h4>Categories</h4>
           <div>
-            <div class="row gy-5">
-              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center mt-3 p-2 rounded-3 w-25" style="background: linear-gradient(#FF9C35, #FFD019);">
-                <h4>Watch</h4>
+            <div class="row gy-3">
+              <div class="col-12 col-md-6 col-lg-4 rounded-3" style="background: linear-gradient(#FF9C35, #FFD019);">
+                <div class="d-flex justify-content-around align-items-center p-2">
+                  <h4>Watch</h4>
                 <img src="images/categories/watch.png" alt="" width="68.21" height="70">
+                </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center  mt-3 ms-3 p-2 rounded-3 w-25" style="background: linear-gradient(#FF589B, #FF136F);">
-                <div><h4>Bag</h4></div>
-                <div><img src="images/categories/bag.png" alt="" width="68.21" height="70"></div>
+              <div class="col-12 col-md-6 col-lg-4 rounded-3" style="background: linear-gradient(#FF589B, #FF136F);">
+                <div class="d-flex justify-content-around align-items-center p-2">
+                  <h4>Bag</h4>
+                <img src="images/categories/bag.png" alt="" width="68.21" height="70">
+                </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-around align-items-center mt-3 ms-3 p-2 rounded-3 w-25" style="background: linear-gradient(#4289FF, #3F07F8);">
-                <div><h4>Shoes</h4></div>
-                <div><img src="images/categories/shoes.png" alt="" width="68.21" height="70"></div>
+              <div class="col-12 col-md-6 col-lg-4  rounded-3" style="background: linear-gradient(#4289FF, #3F07F8);">
+                <div class="d-flex justify-content-around align-items-center p-2">
+                  <h4>Shoes</h4>
+                <img src="images/categories/shoes.png" alt="" width="68.21" height="70">
+                </div>
               </div>
             </div>
           </div>
+          <!-- <div class="container">
+            <div class="row row-cols-3 row-cols-lg-3 g-5 g-lg-3">
+              <div class="col" style="background: linear-gradient(#FF9C35, #FFD019);">
+                <div><h4>Watch</h4>
+                  <img src="images/categories/watch.png" alt="" width="68.21" height="70"></div>
+              </div>
+              <div class="col" style="background: linear-gradient(#FF589B, #FF136F);">
+                <div><h4>Bag</h4>
+                  <img src="images/categories/bag.png" alt="" width="68.21" height="70"></div>
+              </div>
+              <div class="col">
+                <div class="p-3 border bg-light"><h4>Shoes</h4>
+                  <img src="images/categories/shoes.png" alt="" width="68.21" height="70"></div>
+              </div>
+            </div>
+          </div> -->
         </section>
-        <section class="container bg-light mt-3">
+        <section id="shoes" class="container bg-light mt-3">
           <div class="d-flex">
             <h4 class="mt-3 mb-3">Shoes</h4>
           <button class="text-warning bg-light border-0 fw-bold fs-6 ms-auto">See All</button>
           </div>
           <div class="row gy-3">
             <div class="col-12 col-md-6 col-lg-4 rounded">
-              <div class="card shadow">
+              <div class="card border-0 shadow">
                 <img src="images/shoes/shoe-1.png" class="card-img-top img-fluid" alt="" width="150" height="150">
               <div class="card-body justify-content-center align-items-centers">
                 <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
@@ -166,7 +194,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 rounded">
-              <div class="card shadow">
+              <div class="card border-0 shadow">
                 <img src="images/shoes/shoe-2.png" class="card-img-top img-fluid" alt="" width="150" height="150">
               <div class="card-body justify-content-center align-items-centers">
                 <h5 class="card-title">Reebok Pump</h5>
@@ -177,7 +205,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 rounded">
-              <div class="card shadow">
+              <div class="card border-0 shadow">
                 <img src="images/shoes/shoe-3.png" class="card-img-top img-fluid" alt="" width="150" height="150">
               <div class="card-body justify-content-center align-items-centers">
                 <h5 class="card-title">Reebok All Terrain</h5>
@@ -189,14 +217,14 @@
             </div>
           </div>
         </section>
-        <section class="container bg-light pb-3">
+        <section id="backpack" class="container bg-light pb-3">
           <div class="d-flex">
             <h4 class="mt-3 mb-3">Backpack</h4>
           <button class="text-warning bg-light border-0 fw-bold fs-6 ms-auto">See All</button>
           </div>
           <div class="row gy-3">
             <div class="col-12 col-md-6 col-lg-4 rounded">
-              <div class="card shadow">
+              <div class="card border-0 shadow">
                 <img src="images/bags/bag-1.png" class="card-img-top img-fluid" alt="" width="100" height="150">
               <div class="card-body justify-content-center align-items-centers">
                 <h5 class="card-title">Ison Backpack</h5>
@@ -207,7 +235,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 rounded">
-              <div class="card shadow">
+              <div class="card border-0 shadow">
                 <img src="images/bags/bag-2.png" class="card-img-top img-fluid" alt="" width="100" height="150">
               <div class="card-body justify-content-center align-items-centers">
                 <h5 class="card-title">Biaowang Backpack</h5>
@@ -218,7 +246,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 rounded">
-              <div class="card shadow">
+              <div class="card border-0 shadow">
                 <img src="images/bags/bag-3.png" class="card-img-top img-fluid" alt="" width="10" height="10">
               <div class="card-body justify-content-center align-items-centers">
                 <h5 class="card-title">Dxyizu WS54 Smart</h5>
@@ -230,12 +258,12 @@
             </div>
           </div>
         </section>
-        <section class="container mt-5 mb-5 p-5 rounded" style="background-color: #FEEAE9;">
+        <section id="subscribe" class="container mt-5 mb-5 p-5 rounded" style="background-color: #FEEAE9;">
             <h4 class="text-center">LET'S STAY IN TOUCH</h4>
           <p class="text-center">Get updates on sales specials and more</p>
           <div class="text-center">
             <input class="border-0 rounded-start p-1" type="email" placeholder="Enter Your Email" required>
-          <button class="border-0 rounded-end text-white mr-0" style="background-color:#FF136F;">Send</button>
+          <button class="border-0 rounded-end text-white" style="background-color:#FF136F; height: 30px;">Subscribe</button>
           </div>
         </section>
     </main>
